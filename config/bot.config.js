@@ -17,7 +17,7 @@ export default Object.freeze({
   ownerName: String(process.env.OWNER_NAME || "MAXFLEX").trim() || "MAXFLEX",
   ownerNumber,
   ownerNumbers: Object.freeze([ownerNumber]),
-  defaultMode: String(process.env.BOT_MODE || "private").toLowerCase() === "public" ? "public" : "private",
+  defaultMode: String(process.env.BOT_MODE || "public").toLowerCase() === "private" ? "private" : "public",
   sessionDirectory: String(process.env.FEI_SESSION_DIR || "./auth_info_baileys").trim() || "./auth_info_baileys",
   dataDirectory: String(process.env.FEI_DATA_DIR || "./data").trim() || "./data",
   logLevel: String(process.env.LOG_LEVEL || "info").trim().toLowerCase(),
